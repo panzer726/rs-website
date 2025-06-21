@@ -31,11 +31,12 @@ async function enter(input){
         }
         else{
             inputted=""
-        }
-        document.getElementById("i1").style.backgroundColor = "transparent"
+            await new Promise(r => setTimeout(r, 500));
+            document.getElementById("i1").style.backgroundColor = "transparent"
             document.getElementById("i2").style.backgroundColor = "transparent"
             document.getElementById("i3").style.backgroundColor = "transparent"
             document.getElementById("i4").style.backgroundColor = "transparent"
+        }
     }
 };
 
