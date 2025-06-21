@@ -1,9 +1,14 @@
 #keys{
     display: grid;
     grid-template-columns: repeat(3,auto);   
-    gap:10%;
+    gap:0% 1.45rem;
     justify-content: center;
-    padding-top: 3rem;
+    padding-top: 0rem;
+    width: 15rem;
+    height: 20rem;
+    overflow:hidden;
+    position: relative;
+    top:3rem
 }
 
 @font-face {
@@ -13,7 +18,7 @@
 
 body{
     background-color: black;
-    height: 97vh;
+    overflow-x: hidden;
 }
 
 body::before {
@@ -57,11 +62,12 @@ body::before {
 .indicator{
     display: flex;
     gap: 10px;
-    padding-top: 30px;
 }
 
 .indicators{
   display: inline-block;
+  position: relative;
+  top:1rem;
   width: 10px;
   height: 10px;
   border: 1px solid rgb(255, 255, 255); 

@@ -10,6 +10,7 @@
 
 body{                 
     transition: background-color 0.5s ease; 
+    height: 80rem;
 }
 
 body::-webkit-scrollbar {
@@ -17,11 +18,13 @@ body::-webkit-scrollbar {
 }
 
 .container{
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
+    top:50px;
 }
 
 .top-message{
@@ -58,6 +61,12 @@ body::-webkit-scrollbar {
     height: 400px;
     margin: 0 auto;
     padding-top: 20px;
+}
+
+.pic-description{
+    font-family: main_font;
+    margin: 0 auto;
+    font-size: 0.5rem;
 }
 
 .together-counter{
@@ -112,14 +121,19 @@ body::-webkit-scrollbar {
 }
 
 .blackout{
-    justify-content: center;
-    z-index: -1;
-    opacity: 0;
-    width:100vw;
-    height:100vw;
-    background-color: black;
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
     transition: opacity 0.9s ease;
+    z-index: -1;
 
     
 }
@@ -130,3 +144,88 @@ body::-webkit-scrollbar {
   background-color:rgba(255, 255, 255, 0);
 }
 
+.spotify{
+    top: 10px;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 240px;
+    height: 80px;
+    display: flex;
+    background-color: rgb(183, 84, 100);
+    border-radius: 15px;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.your-universe{
+    margin: auto 5px;
+    height: 85%;
+    border-radius: 10px;
+}
+
+.your-universe-title{
+    font-family: bold_font;
+    font-size: 70%;
+    color:white;
+    height: 20px
+}
+
+.your-universe-author{
+    font-family:main_font;
+    font-size:50%;
+    color:rgb(215, 215, 215);
+    position: absolute;
+    right:48%;
+    top:20%;
+}
+
+#spotify-icon{
+    position: absolute;
+    top: 9%;
+    left: 91%;
+    color: white;
+}
+
+.blackout-header{
+    color: white;
+    font-family: bold_font;
+    font-size: 55px;
+    position: absolute;
+    top:140px;
+    opacity:0;
+    transition: opacity 1s ease;
+}
+
+.blackout-parag{
+    color: white;
+    font-family: main_font;
+    font-size: 1rem;
+    position: absolute;
+    top:250px;
+    opacity:0;
+    transition: opacity 1s ease;
+    text-align: center;
+    width: 90%;
+}
+
+.foundation-nextbutton{
+    position: absolute;
+    bottom:15px;
+    font-family: main_font;
+    border-radius: 20%;
+    border: none;
+    width: 120px;
+    height: 30px;
+    background-color: rgb(177, 126, 135);
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.canvas{
+    opacity: 0;
+    display: block;
+    z-index: -1;
+}

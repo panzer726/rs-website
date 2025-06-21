@@ -40,10 +40,28 @@ async function enter(input){
     }
 };
 
-function foundation(){
+async function foundation(){
     blackout = document.querySelector(".blackout");
     blackout.style.zIndex = 10
     blackout.style.opacity = 1
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.body.position = "fixed";
+    document.body.overflow = "hidden";
+    await new Promise(r => setTimeout(r, 2000));
+    document.getElementById('player').play();
+    await new Promise(r => setTimeout(r, 1000));
+    document.querySelector(".spotify").style.opacity = 1;
+    await new Promise(r => setTimeout(r, 2500));
+    document.querySelector(".blackout-header").style.opacity = 1;
+    await new Promise(r => setTimeout(r, 4000));
+     document.querySelector(".blackout-parag").style.opacity = 1;
+     await new Promise(r => setTimeout(r, 10000));
+    document.querySelector(".foundation-nextbutton").style.opacity = 1;
+}   
+
+async function foundationnext(){
+    document.querySelector(".canva").opacity = 1;
+    document.querySelector(".blackout").opacity = 0
 }
 
 const startDate = new Date("2025-03-10T00:00:00"); // March 10, 2025
