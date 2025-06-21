@@ -1,0 +1,24 @@
+{
+  "name": "for-my-baby",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panzer726/rs-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panzer726/rs-website/issues"
+  },
+  "homepage": "https://github.com/panzer726/rs-website#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
