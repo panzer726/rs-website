@@ -1,0 +1,99 @@
+#keys{
+    display: grid;
+    grid-template-columns: repeat(3,auto);   
+    gap:10%;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+@font-face {
+  font-family: main_font;
+  src: url(SFPRODISPLAYREGULAR.OTF);
+}
+
+body{
+    background-color: black;
+    height: 97vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 130%;
+  
+  /* Dim + Background Image */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('bg.jpg') center/cover no-repeat;
+
+  filter: blur(10px);
+  z-index: -1;
+}
+
+
+.entry{
+    justify-content: center;
+    align-items: center;     
+    text-align: center;
+    font-family: main_font;
+    color:white;
+    display:flex;
+    flex-direction: column;
+}
+
+.lock_img{
+    margin-top: 5%;
+    height: 1.7em;
+    width: 1.6em;
+}
+
+.hint{
+    font-size: 15px;
+    
+}
+
+.indicator{
+    display: flex;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.indicators{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgb(255, 255, 255); 
+  border-radius: 50%;     
+  background-color: transparent; 
+  transition: background-color 0.5s ease; 
+}
+
+.round-button{
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    background-color:rgba(255, 255, 255, 0.167);
+    color: white;
+    border:none
+
+}
+
+.spacer{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.number{
+    font-size: 40px;
+}
+
+.label{
+    font-size: 10px;
+}
+
+.enter_pass{
+    font-family: main_font;
+    font-size: 1.5rem;
+}

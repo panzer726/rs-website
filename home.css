@@ -1,0 +1,132 @@
+@font-face {
+  font-family: bold_font;
+  src: url(Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: main_font;
+  src: url(Poppins-Regular.ttf);
+}
+
+body{                 
+    transition: background-color 0.5s ease; 
+}
+
+body::-webkit-scrollbar {
+  display: none;            
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.top-message{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.dear{
+    font-family: bold_font;
+}
+
+.paragraph{
+    font-family: main_font;
+    width: 22em;
+    margin: 0 auto;
+}
+
+.scroll{
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+    padding-top: 4em;
+}
+
+.scroll-text{
+    font-family: main_font;
+    font-size: 0.6rem;
+}
+
+.pic1{
+    width: 230px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.together-counter{
+    padding-top: 5rem;
+    margin: 0 auto;
+    font-family: main_font;
+    justify-content: center;
+    align-content: cent;
+}
+
+
+.numbers{
+    display: flex;
+    gap:9px;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    align-content: center;
+    font-family: bold_font;
+}
+
+.d-label{
+    display: flex;
+    font-size: 0.5rem;
+    gap: 1.7rem;
+    font-family: main_font;
+    justify-content: center;
+}
+
+.h-label{
+    display: flex;
+    font-size: 0.5rem;
+    gap: 1.7rem;
+    font-family: main_font;
+    justify-content: center;
+}
+
+.m-label{
+    display: flex;
+    font-size: 0.5rem;
+    gap: 1.7rem;
+    font-family: main_font;
+    justify-content: center;
+}
+
+.s-label{
+    display: flex;
+    font-size: 0.5rem;
+    gap: 1.7rem;
+    font-family: main_font;
+    justify-content: center;
+}
+
+.blackout{
+    justify-content: center;
+    z-index: -1;
+    opacity: 0;
+    width:100vw;
+    height:100vw;
+    background-color: black;
+    position: fixed;
+    transition: opacity 0.9s ease;
+
+    
+}
+
+.menu-button{
+  position: fixed;
+  border: none;
+  background-color:rgba(255, 255, 255, 0);
+}
+
