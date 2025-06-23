@@ -9,19 +9,32 @@
 </head>
 <body>
 
-    <button class="menu-button"> 
+    <button class="open-menu" onclick=openMenu()> 
         <i class="fa-solid fa-bars"></i>
     </button>
+
+    <div class="menu">
+        <button class="close-menu" onclick=closeMenu()> 
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="menu-container">
+            <div class ="menu-home">‎ HOME ‎ </div>
+            <div class ="menu-bebezone">‎ BEBEZONE ‎</div>
+            <div onclick="window.location.href='/capsule.html'" class ="menu-time_capsule">‎ TIME CAPSULE ‎</div>
+        </div>
+    </div>
+    <button onclick=closeMenu() class="unwhite"></button>
 
     <div class="container">
 
         <div></div>
         <div class="top-message">
-            <h1 class="dear">Dear Riane,</h1>
-            <p class="paragraph">I really hope that I could let you borrow my eyes that you can see how much I really love you. </p>
+            <h1 class="dear">Hi Baby</h1>
+            <p class="paragraph">I LOVE YOU SO MUCHHHHHH </p>
+            <img src="ily.gif" style="width:50%; margin:0 auto">
             <img src="scroll.jpg" class="scroll">
             <div class = "scroll-text">SCROLL</div>
-            <img src="" class="pic1">
+            <img src="photobooth.png" class="pic1">
         </div>
 
         <div class="pic-description">dito natin ilalagay yung next photobooth hshwaha</div>
@@ -58,6 +71,8 @@
 
     <div class="blackout">
 
+    <div class = "blackout-instruction">(on mo po volume hehe)</div>
+
     <div class = "spotify">
         <audio id="player" src="your-universe.mp3" type="audio/mpeg"></audio>
         <img class="your-universe" src="your-universe.jpg">
@@ -71,7 +86,6 @@
     <button onclick=foundationnext() class = "foundation-nextbutton">pindutin mo po</button>
     </div>
 
-    <canvas id="fireworks"></canvas>
 
 
     <script src="index.js"></script>
