@@ -1,11 +1,11 @@
 @font-face {
   font-family: main_font;
-  src: url(SFPRODISPLAYREGULAR.OTF);
+  src: url(fonts/SFPRODISPLAYREGULAR.OTF);
 }
 
 @font-face {
   font-family: ip_font;
-  src: url(MYRIADPRO-BOLD.OTF);
+  src: url(fonts/MYRIADPRO-BOLD.OTF);
 }
 
 #keys{
@@ -77,7 +77,7 @@ body::before {
   border: 1px solid rgb(255, 255, 255); 
   border-radius: 50%;     
   background-color: transparent; 
-  transition: background-color 0.5s ease; 
+  transition: background-color 0.3s ease; 
 }
 
 .round-button{

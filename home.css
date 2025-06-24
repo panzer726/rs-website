@@ -1,11 +1,11 @@
 @font-face {
   font-family: bold_font;
-  src: url(Poppins-Bold.ttf);
+  src: url(fonts/Poppins-Bold.ttf);
 }
 
 @font-face {
   font-family: main_font;
-  src: url(Poppins-Regular.ttf);
+  src: url(fonts/Poppins-Regular.ttf);
 }
 
 body{                 
@@ -192,7 +192,8 @@ body::-webkit-scrollbar {
     height: 100vh;
     background-color: black;
     transition: opacity 0.2s;
-    border: none
+    border: none;
+    pointer-events: none;
 }
 
 .blackout-instruction{

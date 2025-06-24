@@ -55,13 +55,13 @@ async function enter(input){
 async function openMenu(){
     document.querySelector(".unwhite").style.opacity = 0.6;
     document.querySelector(".menu").style.left = 0;
-    document.querySelector(".unwhite").style.pointerEvents = "none";
+    document.querySelector(".unwhite").style.pointerEvents = "all";
 }
 
 async function closeMenu(){
     document.querySelector(".unwhite").style.opacity = 0;
     document.querySelector(".menu").style.left = "-200px";
-    document.querySelector(".unwhite").style.pointerEvents = all;
+    document.querySelector(".unwhite").style.pointerEvents = "none";
 }
 
 async function foundation(){
@@ -144,5 +144,5 @@ function openNewMessage(){
     document.querySelector(".unwhite2").style.opacity = 1;
     document.querySelector(".unwhite2").style.pointerEvents = "auto";
     document.querySelector(".new_message-container").style.opacity = 1;
-    document.querySelector(".new_message-container").style.pointerEvents = "auto";
+    document.querySelector(".new_message-container").style.pointerEvents = "all";
 }
